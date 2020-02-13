@@ -1,0 +1,224 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+     color: #2688cd;;
+}
+a:hover{
+text-decoration: underline;
+}
+
+
+
+
+
+.container{
+    margin: 0 auto;
+    min-width: 760px;
+    padding: 15px 0;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.content-header__title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.content-header__quantity{
+    color: #999999;
+    font-weight: normal;
+    font-size: 0.7em;
+}
+.content-header__button{
+    border: 1px solid #15ad4b;
+    background: #10B02D;
+    height: 34px;
+    padding: 6px 17px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.15s ease-in;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.content-header__button:hover{
+    background-color: #0b983d;
+    border-color: #0b983d;
+}
+
+
+
+.fast-search{
+    padding: 0 15px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+.search-form{
+    height: 32px;
+    width: 214px;
+    position: relative;
+}
+.search-form__btn{
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0 0 0 21px;
+    border: none;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    left: 10px;
+    top: 8px;
+    background-image: url(./imgs_project/search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+}
+.search-form__input{
+    width: 186px;
+    height: 28px;
+    padding-left: 30px;
+    font-size: 14px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border 0.2s ease-out;
+}
+
+
+
+
+.categories__titles{
+    margin-left: 5px;
+    height: 32px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.categories__title{
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #999999;
+}
+
+
+
+.categories__item{
+    cursor: pointer;
+    height: 52px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+}
+.categories__meal{
+    display: flex;
+    opacity: 1;
+    align-items: center;
+}
+.open-sub_categories{
+    opacity: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./imgs_project/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    margin-top: 10px;
+}
+.open-sub_categories:hover {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+.categories__img{
+    margin-right: 10px;
+    width: 48px;
+    height: 35px;
+}
+.btn-open{
+    display: flex;
+    align-items: center;
+}
+.btn-open__btn{
+    position: relative;
+    padding: 0 5px;
+    width: 40px;
+    height: 52px;
+    font-size: 30px;
+    padding-bottom: 12px;
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+    color: blue;
+}
+
+.btn-open__list{
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    left: -95%;
+    width: 96px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.btn-open__list--on{
+    display: block;
+}
+.btn-open__item{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+}
+.btn-open__item:hover{
+    background-color: rgb(245, 245, 245);
+    transition-duration: 0.3s;
+}
+.categories__item:hover{
+    background-color: rgb(245, 245, 245);
+    transition-duration: 0.6s;
+}
+
+
+
+
+
+
+
+.low-opacity{
+    opacity: 0.3;
+}
+.dn{
+    display: none;
+}
